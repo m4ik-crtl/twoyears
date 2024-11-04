@@ -1,0 +1,107 @@
+/* Estilo geral */
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'EB Garamond', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Para garantir que o body ocupe toda a altura da tela */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.title {
+    color: #ff66b2; /* Cor rosa para o título */
+    font-size: 2.5em; /* Tamanho maior para destaque */
+    text-shadow: 2px 2px #ff0000; /* Sombra vermelha para o título */
+}
+
+.page {
+    display: none;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+    padding: 20px; 
+}
+
+.page.active {
+    display: flex;
+}
+
+.center {
+    text-align: center;
+    font-size: 2em;
+    color: #ffcc00; /* Cor dourada para destaque */
+}
+
+button {
+    background-image: linear-gradient( #ff66b2, #6685ff );
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 1.5em;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.3);
+}
+
+.text-container {
+    background: linear-gradient(1555deg, #790049, #5c005f); /* Gradiente de fundo colorido */
+    color: #f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    margin: 20px;
+    max-width: 800px;
+    text-align: justify;
+    font-size: 16px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); /* Sombra colorida para destacar */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+.text-container:hover {
+    transform: scale(1.02); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.image-gallery img {
+    width: 200px; /* Tamanho fixo para todas as imagens */
+    height: 200px; /* Tamanho fixo para todas as imagens */
+    object-fit: cover; /* Corta as imagens para caber no tamanho definido */
+    border: 5px solid transparent; /* Borda inicial transparente */
+    transition: border 0.3s;
+}
+
+.image-gallery img:hover {
+    border: 5px solid #ff00bb; /* Borda amarela brilhante ao passar o mouse */
+}
+
+h2 {
+    color: #ff66b2; /* Cor rosa para o título do vídeo */
+    text-align: center;
+}
+
+.video-container {
+    width: 640px; /* Largura do vídeo */
+    height: 360px; /* Altura do vídeo */
+    overflow: hidden; /* Oculta o que excede o tamanho do container */
+    border-radius: 30px; /* Bordas arredondadas para o vídeo */
+}
+
+.video-container iframe {
+    width: 100%; /* O iframe ocupa 100% do container */
+    height: 100%; /* O iframe ocupa 100% do container */
+    border: 10px #ff00bb;; /* Sem borda no iframe */
+}
